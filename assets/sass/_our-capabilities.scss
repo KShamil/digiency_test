@@ -1,0 +1,136 @@
+.our-capabilities {
+    width: 100%;
+    min-height: auto;
+    @include center();
+    padding-bottom: 120px;
+    .container {
+        width: 80%;
+        height: auto;
+        @include column();
+        .up {
+            width: auto;
+            height: auto;
+            @include between();
+            gap: 20px;
+            .left {
+                width: auto;
+                height: auto;
+                padding-bottom: 120px;
+                .header {
+                    width: auto;
+                    height: auto;
+                    margin-top: 120px;
+                    text-align: start;
+                    h3 {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #FF5300;
+                        span {
+                            position: relative;
+                            
+                            &::before {
+                            display: block;
+                            width: 40px;
+                            content: '';
+                            position: absolute;
+                            bottom: 30%;
+                            left: 135px;
+                            border: 1px solid #FF5300;
+                            background-color: #FF5300;
+                            }
+                            
+                            }
+                    }
+                    h2 {
+                        margin-top: 8px;
+                        font-weight: 600;
+                        font-size: 39px;
+                        color: #373737;
+                        margin-top: 15px;
+                        line-height: 59px;
+                    }
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7B7B7B;
+                    margin-top: 18px;
+                }
+                .wrapper {
+                    width: auto;
+                    height: auto;
+                    @include between();
+                    margin-top: 40px;
+                    .mini-card {
+                        width: 125px;
+                        height: 108px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                        text-align: center;
+                        padding-bottom: 15px;
+                        .number {
+                            font-weight: 600;
+                            font-size: 25px;
+                            line-height: 38px;
+                            color: #FF5300;
+                        }
+                        .text {
+                            font-weight: 300;
+                            font-size: 12.8px;
+                            line-height: 19px;
+                            color: #373737;
+                        }
+                    }
+                }
+            }
+            .right {
+                width: auto;
+                height: auto;
+                img {
+                    max-width: 611px;
+                    height: 375px;
+                }
+            }
+        }
+        .down {
+            width: 100%;
+            height: auto;
+            .orange-block {
+                width: 100%;
+                height: 273px;
+                background: #FF5300;
+                border-radius: 10px;
+                @include around();
+                .descr {
+                    width: auto;
+                    height: auto;
+                    text-align: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #FFFFFF;
+                        margin-top: 15px;
+                        span {
+                            font-weight: 600;
+                            font-size: 39px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                .dash {
+                    width: 3px;
+                    height: 134px;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

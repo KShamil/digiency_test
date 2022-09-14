@@ -1,0 +1,138 @@
+.our-blog {
+    width: 100%;
+    min-height: 912px;
+    @include center();
+    background: #FFF7F4;
+    .container {
+        width: 80%;
+        height: auto;
+        @include column();
+        .up {
+            width: auto;
+            height: auto;
+            .header {
+                width: auto;
+                height: auto;
+                text-align: center;
+                h3 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #FF5300;
+                    span {
+                        position: relative;
+                        
+                        &::before {
+                        display: block;
+                        width: 40px;
+                        content: '';
+                        position: absolute;
+                        bottom: 30%;
+                        left: 80px;
+                        border: 1px solid #FF5300;
+                        background-color: #FF5300;
+                        }
+                        
+                        &::after {
+                        display: block;
+                        width: 40px;
+                        content: '';
+                        position: absolute;
+                        bottom: 30%;
+                        right: 80px;
+                        border: 1px solid #FF5300;
+                        background-color: #FF5300;
+                        }
+                        }
+                }
+                h2 {
+                    margin-top: 8px;
+                    font-weight: 600;
+                    font-size: 39px;
+                    color: #373737;
+                    margin-top: 15px;
+                    line-height: 59px;
+                }
+            }
+        }
+        .down {
+            width: auto;
+            height: auto;
+            @include center();
+            margin-top: 60px;
+            gap: 30px;
+            .card {
+                width: 370px;
+                height: 544px;
+                background: #FFFFFF;
+                box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                .card-img {
+                    width: 340px;
+                    height: 225px;
+                    border-radius: 10px;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                h4 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #373737;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                .info {
+                    width: auto;
+                    height: auto;
+                    @include between();
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    .item {
+                        width: auto;
+                        height: auto;
+                        @include between();
+                        gap: 5px;
+                        .info-img {
+                            width: 14px;
+                            height: 14px;
+                        }
+                        .info-p {
+                            font-size: 10.24px;
+                            color: #373737;
+                        }
+                    }
+                }
+                .card-p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7B7B7B;
+                    margin-top: 18px;
+                    margin-left: 15px;
+                    margin-right: 17px;
+                }
+                button {
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 5px;
+                    background: #FF5300;
+                    border: #FF5300;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin-top: 25px;
+                    margin-left: 15px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid black;
+                        color: #373737;
+                }
+                }
+            }
+        }
+    }
+}

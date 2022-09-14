@@ -1,0 +1,54 @@
+.choose {
+    width: 100%;
+    min-height: 790px;
+    @include center();
+    background-color: #FFF7F4;
+    .container {
+        width: 80%;
+        height: auto;
+        @include between();
+        .left {
+            width: auto;
+            height: auto;
+            .choose_title {
+                font-weight: 700;
+                font-size: 48.83px;
+                line-height: 73px;
+                color: #373737;
+            }
+            .choose_text {
+                margin-top: 18px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7B7B7B;
+            }
+            .choose_btn {
+                width: 182px;
+                height: 50px;
+                margin-top: 30px;
+                background: #FF5300;
+                border: #FF5300;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid black;
+                    color: #373737;
+                }
+            }
+        }
+        .right {
+            width: auto;
+            height: auto;
+            img {
+                width: 553.03px;
+                height: 470.91px;
+            }
+        }
+    }
+}
