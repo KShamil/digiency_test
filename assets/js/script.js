@@ -53,25 +53,25 @@ const changeLangFunc =()=> {
     if (langBtn.innerHTML == "AZE" ) {
         for (let index = 0; index < changeLangArr[0].length; index++) {
             langItem[index].innerHTML = changeLangArr[0][index];
-            langItemChoose.innerHTML = changeLangArr[2];
-            langHeaderBtn.innerHTML = changeLangArr[4];
-            langChooseBtn.innerHTML = changeLangArr[6];
-            langServiceTitle.innerHTML = changeLangArr[8];
-            langServiceSubtitle.innerHTML = changeLangArr[10];
-            langBtn.innerHTML = "ENG";
+        }
+        langItemChoose.innerHTML = changeLangArr[2];
+        langHeaderBtn.innerHTML = changeLangArr[4];
+        langChooseBtn.innerHTML = changeLangArr[6];
+        langServiceTitle.innerHTML = changeLangArr[8];
+        langServiceSubtitle.innerHTML = changeLangArr[10];
+        langBtn.innerHTML = "ENG";
 
-            for (let index = 0; index < changeLangArr[12].length; index++) {
-                langCardTitle[index].innerHTML = changeLangArr[12][index];
-                
-            }
-
-            langAboutTitle.innerHTML = changeLangArr[14];
-            langAboutSubtitle.innerHTML = changeLangArr[16];
+        for (let index = 0; index < changeLangArr[12].length; index++) {
+            langCardTitle[index].innerHTML = changeLangArr[12][index];
             
-            for (let index = 0; index < changeLangArr[18].length; index++) {
-                langInfoLink[index].innerHTML = changeLangArr[18][index];
-                
-            }
+        }
+
+        langAboutTitle.innerHTML = changeLangArr[14];
+        langAboutSubtitle.innerHTML = changeLangArr[16];
+        
+        for (let index = 0; index < changeLangArr[18].length; index++) {
+            langInfoLink[index].innerHTML = changeLangArr[18][index];
+            
         }
         
     } else {
